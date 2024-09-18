@@ -22,7 +22,7 @@ mkdir alignment
 ```markdown=
 cd /alignment
 pwd
-rsync -avz /work/u2499286/alignment/bwa.sh/ /work/username/alignment
+rsync -avz /work/u2499286/alignment/bwa.sh /work/username/alignment
 ```
 
 ℹ️
@@ -223,7 +223,7 @@ mkdir alignment
 ```marksown=
 cd /alignmnet
 pwd
-rsync -avz /work/u2499286/alignment/bwa.sh/ /work/username/alignment
+rsync -avz /work/u2499286/alignment/bwa.sh /work/username/alignment
 ```
 ℹ️
 #### 命令小學堂
