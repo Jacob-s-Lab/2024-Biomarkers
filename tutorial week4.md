@@ -1,7 +1,7 @@
 # 20240925 Fantastic Genomic Biomarkers and Where to Find Them Practical Course (part IV)
 -----------
 :warning: **Warning**
-### ~TA Reminder~
+### TA Reminder
 #### 1. Introduction to NCHC Folder Hierarchy
 ![image](https://hackmd.io/_uploads/HJ01rw3TC.png)
 
