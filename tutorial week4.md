@@ -81,6 +81,10 @@ vim bwa_markdup.sh
 
 ![image](https://hackmd.io/_uploads/H1Yo8qbTA.png)
 
+
+The step we add today
+![image](https://hackmd.io/_uploads/SktMvx-R0.png)
+
 4. Enter `:wq` to save and exit.
 ```
 :wq
@@ -174,8 +178,8 @@ https://igv.org/doc/desktop/#
 [User Guide > Tracks and Data Types > Alignments > Paired-end alignments > Detecting structral variants]
 
 ### Step 2: Observe the Impact of MarkDuplicates (Compare This Week's and Last Week's Results)
-![image](https://hackmd.io/_uploads/r1myUreTA.png)
-![image](https://hackmd.io/_uploads/Hk12kXKaR.png)
+![image](https://github.com/user-attachments/assets/e3fcb523-584f-4ba7-80af-b03eda58d386)
+
 
 
 
@@ -261,6 +265,10 @@ vim bwa_markdup.sh
 3. 在任何<span style="color: red;">username</span>的位子輸入自己的主機帳號
 
 ![image](https://hackmd.io/_uploads/H1Yo8qbTA.png)
+
+
+本次加入步驟
+![image](https://hackmd.io/_uploads/SktMvx-R0.png)
 
 4. 輸入`:wq`儲存離開
 ```
@@ -374,5 +382,5 @@ sh /opt/ohpc/Taiwania3/pkg/biology/IGV/IGV_v2.10.3/igv.sh
 若你想要了解在 IGV 中每個 read 的顏色所代表的意義，可以參考以下連結(https://igv.org/doc/desktop/#)
 [User Guide > Tracks and Data Types > Alignments > Paired-end alignments > Detecting structral variants]
 ### step 2 觀察MarkDuplicates這步驟的影響(比較本週及上週結果)
-![image](https://hackmd.io/_uploads/r1myUreTA.png)
-![image](https://hackmd.io/_uploads/Hk12kXKaR.png)
+![image](https://github.com/user-attachments/assets/060d1b33-3d47-440c-98bf-e46ef70834ec)
+
