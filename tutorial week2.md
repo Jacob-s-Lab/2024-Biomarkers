@@ -40,7 +40,7 @@ password: NGS112-2
 6. Upload them to your own fastqc folder.
 <span style="color: red;">In this step, you need to learn how to upload files from local to NCHC</span>.
 ```
-Upload files:rsync -azrvh . supercomputeracount@t3-c4.nchc.org.tw:/home/work/supercompputeraccount/result/fastqc
+Upload files:rsync -azrvh . supercomputeracount@t3-c4.nchc.org.tw:/work/supercompputeraccount/result/fastqc
 unzip a file: unzip <filename_to_unzip>
 rename a file: mv <original_filename> <new_filename>
 ```
@@ -231,7 +231,7 @@ rsync -avz /work/u2499286/qc.sh ./
 6. 請直接[上傳](https://github.com/Jacob-s-Lab/2024-Biomarkers/blob/main/tutorial%20week1)  檔案到fastqc
 <span style="color: red;">此步驟需要學習的內容為將檔案從本地端上傳至國網</span>
 ```
-上傳檔案:rsync -azrvh . 主機帳號@t3-c4.nchc.org.tw:/home/work/主機帳號/result/fastqc
+上傳檔案:rsync -azrvh . 主機帳號@t3-c4.nchc.org.tw:/work/主機帳號/result/fastqc
 解壓縮檔案: unzip <要解壓縮的檔名>
 改檔名: mv <原本的檔名> <後來的檔名>
 ```
