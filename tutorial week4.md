@@ -179,7 +179,38 @@ https://igv.org/doc/desktop/#
 
 ### Step 2: Observe the Impact of MarkDuplicates (Compare This Week's and Last Week's Results)
 ![image](https://github.com/user-attachments/assets/e3fcb523-584f-4ba7-80af-b03eda58d386)
+If you want to know th details about bwa :https://bio-bwa.sourceforge.net/bwa.shtml
 
+## FastQC Report
+#### Introduction to the FastQC Report from Course II
+1. Fastqc report
+![image](https://hackmd.io/_uploads/SJgWblgCR.png)
+
+2. Per base sequence quality
+![image](https://hackmd.io/_uploads/BySxllgCA.png)
+
+3. Per sequence quality scores
+ ![image](https://hackmd.io/_uploads/r1LbexeCR.png)
+
+4. Per base sequence content
+![image](https://hackmd.io/_uploads/H1KfeggAA.png)
+
+5. Per sequence GC content
+![image](https://hackmd.io/_uploads/ryaNelgRC.png)
+
+6. Per base N content
+![image](https://hackmd.io/_uploads/HJbLgxeCC.png)
+
+7. Sequence Length Distribution
+![image](https://hackmd.io/_uploads/S1fPlxeAR.png)
+
+8. Sequence Duplication Levels
+![image](https://hackmd.io/_uploads/rkp_eggRR.png)
+
+9. Overrepresented sequences
+10. Adapter Content
+![image](https://hackmd.io/_uploads/S1Y2egeCA.png)
+-------------------------
 
 
 
@@ -383,4 +414,33 @@ sh /opt/ohpc/Taiwania3/pkg/biology/IGV/IGV_v2.10.3/igv.sh
 [User Guide > Tracks and Data Types > Alignments > Paired-end alignments > Detecting structral variants]
 ### step 2 觀察MarkDuplicates這步驟的影響(比較本週及上週結果)
 ![image](https://github.com/user-attachments/assets/060d1b33-3d47-440c-98bf-e46ef70834ec)
+如果想知道bwa的詳細內容:https://bio-bwa.sourceforge.net/bwa.shtml
+### Fastqc Report介紹
+#### 介紹第二週做出來的fastqc report
+1. Fastqc report
+![image](https://hackmd.io/_uploads/SJgWblgCR.png)
 
+2. Per base sequence quality
+![image](https://hackmd.io/_uploads/BySxllgCA.png)
+
+3. Per sequence quality scores
+ ![image](https://hackmd.io/_uploads/r1LbexeCR.png)
+
+4. Per base sequence content
+![image](https://hackmd.io/_uploads/H1KfeggAA.png)
+
+5. Per sequence GC content
+![image](https://hackmd.io/_uploads/ryaNelgRC.png)
+
+6. Per base N content
+![image](https://hackmd.io/_uploads/HJbLgxeCC.png)
+
+7. Sequence Length Distribution
+![image](https://hackmd.io/_uploads/S1fPlxeAR.png)
+
+8. Sequence Duplication Levels
+![image](https://hackmd.io/_uploads/rkp_eggRR.png)
+
+9. Overrepresented sequences
+10. Adapter Content
+![image](https://hackmd.io/_uploads/S1Y2egeCA.png)
