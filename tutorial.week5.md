@@ -69,11 +69,11 @@ vim variantcalling.sh
 
 ![image](https://hackmd.io/_uploads/H1Yo8qbTA.png)
 
-warning:::
+:warning: **Warning**
 #### The step we add today: Variant calling
 ![image](https://hackmd.io/_uploads/BJ2Qkuz0C.png)
 
-:::
+
 
 4. Enter `:wq` to save and exit.
 ```
@@ -119,7 +119,7 @@ q
 ```
 
 ### Explanation of VCF Files
-:::warning
+:warning: **Warning**
 
 
 :warning: <Background Information> :warning:
@@ -128,7 +128,7 @@ Since the GATK takes a long time to execute variant calling, the results used in
 rsync -avz /work/u2499286/variantcalling/variantcallingR/SRR13076392_S14_L002_.HC.vcf.gz ./
 rsync -avz /work/u2499286/variantcalling/variantcallingR/SRR13076392_S14_L002_.HC.vcf.gz.tbi ./
 ```
-:::    
+
 
 ℹ️
 #### What is a VCF File?
