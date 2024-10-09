@@ -1,4 +1,4 @@
-## 20240925 Fantastic Genomic Biomarkers and Where to Find Them Practical Course (part V)
+## 20241009 Fantastic Genomic Biomarkers and Where to Find Them Practical Course (part V & VI)
 
 ## Main Content of the Course
 1. Use BWA for alignment
