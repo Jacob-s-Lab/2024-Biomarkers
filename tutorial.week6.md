@@ -3,14 +3,14 @@
 ## Main Content of the Course
 1. Use BWA for alignment
 2. Use Picard to mark duplicates
-3. <span style="color: red;"> Using GATK for Variant Calling</span>
+3. <span style="color: red;"> Using GATK HaplotypeCaller for the germline Variant Calling</span>
 4. Learn to read VCF files (the results of variant calling).   
 
 
 
 ℹ️
 #### Introduction to GATK
-- GATK (Genome Analysis Toolkit) is a powerful software toolkit for genomic analysis, specifically designed to process high-throughput DNA and RNA sequence data. It is particularly focused on variant calling, data quality control, and data post-processing. GATK is widely used in research to analyze genetic variations associated with diseases, cancer genomics, and individual genomic analysis.
+- GATK (Genome Analysis Toolkit) is a powerful software toolkit for genomic analysis, specifically designed to process high-throughput DNA and RNA sequence data. It focuses on variant calling, data quality control, and data post-processing. GATK is widely used in research to analyze genetic variations associated with diseases, cancer genomics, and individual genomic analysis.
 - The tool used in this course is HaplotypeCaller, which is the most commonly used variant calling tool in GATK, specifically for detecting single nucleotide variants (SNPs) and insertion/deletion variants (Indels). 
 https://gatk.broadinstitute.org/hc/en-us
 
