@@ -27,6 +27,42 @@ rsync -avz /work/u2499286/variantcalling/variantcallingR/vep.sh /work/username/v
 ```
 vim vep.sh
 ```
+
+* VEP PATH
+![Screenshot 2024-10-15 at 15.43.26](https://hackmd.io/_uploads/SkjVpqj1ke.png)
+
+* Customized Taiwan Biobank database
+![Screenshot 2024-10-15 at 15.44.11](https://hackmd.io/_uploads/BJMwpciJ1x.png)
+![Screenshot 2024-10-15 at 15.46.09](https://hackmd.io/_uploads/H1nCT9iy1e.png)
+
+* Split multiallelic and normalized
+
+![Screenshot 2024-10-15 at 15.53.38](https://hackmd.io/_uploads/SJockiiyJe.png)
+
+![Screenshot 2024-10-15 at 15.54.49](https://hackmd.io/_uploads/H10RyisJkx.png)
+
+![Screenshot 2024-10-15 at 15.56.42](https://hackmd.io/_uploads/Sy5Ixjj11g.png)
+
+![Screenshot 2024-10-15 at 16.31.47](https://hackmd.io/_uploads/SJp9uiikJx.png)
+
+[https://genome.sph.umich.edu/wiki/Variant_Normalization](https://)
+
+* VEP annotation
+
+![Screenshot 2024-10-15 at 15.59.23](https://hackmd.io/_uploads/HyrZboi1Jg.png)
+
+* Original VEP output
+
+![Screenshot 2024-10-15 at 16.09.19](https://hackmd.io/_uploads/SyxcSmis1kg.png)
+
+
+
+* Format into TSV
+![Screenshot 2024-10-15 at 16.00.36](https://hackmd.io/_uploads/H1ULbso1kg.png)
+
+![Screenshot 2024-10-15 at 16.08.42](https://hackmd.io/_uploads/B1RI7js11g.png)
+
+
 2. Enter `:wq` to save and exit.
 ```
 :wq
@@ -47,13 +83,12 @@ sbatch vep.sh
 ## Explanation of TSV Files
 
 
-### :warning:  Background information  :warning:
+### :warning: Background Information :warning:
 Since VEP takes a longer time to run the annotation, the steps below will use results that have already been processed by the teaching assistant. Please copy the TA's results first.
   ```
 rsync -avz /work/u2499286/variantcalling/variantcallingR/SRR13076392_S14_L002_.HC.VEP_filtered.tsv ./
 ```  
     
-
 (1) **CHROM**: The chromosome.
 (2) **POS**: The position of the variant.
 (3) **REF**: The reference allele.
@@ -103,7 +138,45 @@ rsync -avz /work/u2499286/variantcalling/variantcallingR/vep.sh /work/username/v
 ```
 vim vep.sh
 ```
+* VEP 路徑
+![Screenshot 2024-10-15 at 15.43.26](https://hackmd.io/_uploads/SkjVpqj1ke.png)
 
+* 自行定義的資料庫
+![Screenshot 2024-10-15 at 15.44.11](https://hackmd.io/_uploads/BJMwpciJ1x.png)
+![Screenshot 2024-10-15 at 15.46.09](https://hackmd.io/_uploads/H1nCT9iy1e.png)
+
+* Split multiallelic and normalized 拆分單一位置多種變異以及座標向左對齊
+
+![Screenshot 2024-10-15 at 15.53.38](https://hackmd.io/_uploads/SJockiiyJe.png)
+
+![Screenshot 2024-10-15 at 15.54.49](https://hackmd.io/_uploads/H10RyisJkx.png)
+
+![Screenshot 2024-10-15 at 15.56.42](https://hackmd.io/_uploads/Sy5Ixjj11g.png)
+
+![Screenshot 2024-10-15 at 16.31.47](https://hackmd.io/_uploads/SJp9uiikJx.png)
+
+[https://genome.sph.umich.edu/wiki/Variant_Normalization](https://)
+    
+    
+* VEP annotation 正式VEP註解遺傳變異
+
+![Screenshot 2024-10-15 at 15.59.23](https://hackmd.io/_uploads/HyrZboi1Jg.png)
+
+* Original VEP output 原始VEP格式（VCF）
+
+![Screenshot 2024-10-15 at 16.09.19](https://hackmd.io/_uploads/SyxcSmis1kg.png)
+
+
+
+* Format into TSV 轉換為Tab分隔格式
+![Screenshot 2024-10-15 at 16.00.36](https://hackmd.io/_uploads/H1ULbso1kg.png)
+
+![Screenshot 2024-10-15 at 16.08.42](https://hackmd.io/_uploads/B1RI7js11g.png)
+
+
+    
+    
+    
 2. 輸入`:wq`儲存離開
 ```
 :wq
@@ -149,7 +222,7 @@ rsync -avz /work/u2499286/variantcalling/variantcallingR/SRR13076392_S14_L002_.H
 2. POS:變異所在的座標
 3. REF：參考資料之等位基因
 4. ALT：變異後的等位基因
-5. DP：測序深度
+5. DP：定序深度
 6. Allele：與ALT相同
 7. Consequence：變異位點所影響之等位基因。(https://www.ensembl.org/info/genome/variation/prediction/predicted_data.html)
 7. SYMBOL：基因的官方名稱。
@@ -157,4 +230,4 @@ rsync -avz /work/u2499286/variantcalling/variantcallingR/SRR13076392_S14_L002_.H
 9. gnomADe_EAS_AF：此變異在gnomAD Exome資料庫中的東亞人群等位基因頻率。
 10. gnomADg_EAS_AF：此變異在gnomAD Genome資料庫中的東亞人群等位基因頻率（如果存在）。
 12. CLIN_SIG：在ClinVar database中臨床意義。
-13. TWB_official_SNV_indel_AF：台灣人體資料庫中此變異的等位基因頻率。(https://www.sciencedirect.com/science/article/pii/S2090123223004058?via%3Dihub)
+13. TWB_official_SNV_indel_AF：最新臺灣人體資料庫中此變異的等位基因頻率。(https://www.sciencedirect.com/science/article/pii/S2090123223004058?via%3Dihub)
