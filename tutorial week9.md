@@ -4,18 +4,18 @@
 
 ## Main Content of the Course
 
-####  <span style="color: red;">Today's class will be a review and summary of the content from the past eight weeks, using the data this week as an example.</span>
+####  <span style="color: red;">This week we will review and practice more for the contents from the past eight weeks.</span>
     
 The workflow for NGS data analysis is as follows:
 ![截圖 2024-10-28 晚上11.08.04](https://hackmd.io/_uploads/S1EgYXpgyx.png)
 
-The steps for analyzing NGS data after acquisition are as follows:
+The steps for analyzing NGS data are as follows:
 
-1. After obtaining the NGS data, it is essential to ensure that the data has sufficient quality for analysis to ensure the accuracy of the final results. Therefore, we need to perform **FastQC** first.
+1. After obtaining the NGS data, it is essential to ensure that the data has sufficient quality to ensure the accuracy of the final results. Therefore, we need to perform **FastQC** to check the read quality systematically.
 
-2. The raw data from NGS consists of short fragments, which can be classified into short reads and long reads. Regardless of the type, they must be compared with the reference genome. This process is akin to assembling a puzzle, where we align the fragments (or reads) from the raw data back to their correct positions in the genome, which is what we call **alignment**.
+2. The raw sequencing reads can be classified into short or long reads. Regardless of the type, the sequencing reads must be compared against the reference genome. Bioinformatic tools help us compare the fragments (or reads) to find their correct positions across the genome, which we call **read mapping or read alignment**.
 
-3. During NGS, adaptors randomly bind to both ends of the original DNA fragments and then amplify to produce new strands of DNA. However, because this process is random, it may lead to repeated attachments on previously sequenced DNA, resulting in certain fragments appearing with particularly high frequency. To avoid misleading interpretations of the depth of this sequence during analysis, we use a method called **marking duplicates** to eliminate the continuously repeated identical sequences.
+3. During NGS library construction, adaptors randomly bind to both ends of the original DNA fragments and then the polymerase chain reactions (PCR) amplify to produce new strands of DNA. However, because this process is random, it may lead to repeated attachments on previously sequenced DNA, resulting in certain fragments appearing with amplification bias. To avoid misleading interpretations of the depth of this sequence during analysis, we use a method called **marking duplicates** to eliminate the continuously repeated identical sequences.
 
 4. After obtaining the correct depth and quality, we can begin our analysis with **variant calling**. As the name suggests, variant calling is the process of identifying positions in the data sequence that have variants, such as indels and SNVs. The tool we used in class for variant calling is GATK.
 
