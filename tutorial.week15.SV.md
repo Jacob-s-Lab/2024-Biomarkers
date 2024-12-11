@@ -21,10 +21,10 @@ rsync -avzP /work/u2499286/SV/thalassemia_pipeline_course/demo/NGS1_20170103B.hs
 
 :::info
 What is `Manta`?
-- `Manta` is a tool used for detecting genomic structural variations (SVs). The structural variants it processes include large insertions, deletions, rearrangements, inversions, and other complex variation types. This tool was developed by Illumina and is specifically designed for handling high-throughput sequencing (HTS) data.
+- `Manta` is a tool for detecting genomic structural variations (SVs). The structural variants include large insertions, deletions, rearrangements, inversions, and other complex variation types. Illumina developed this tool, specifically designed for handling high-throughput sequencing (HTS) data.
 
 What are **structural variants (SVs)**?
-- **Structural variants** refer to DNA structural changes in chromosomes that are greater than 50 base pairs (bp) compared to the reference genome. These variants may involve phenomena such as insertions, deletions, inversions, and duplications in chromosomes, potentially having profound impacts on gene function and the health of an organism.
+- **Structural variants** refer to DNA structural changes in chromosomes greater than 50 base pairs (bp). These variants may involve phenomena such as insertions, deletions, inversions, and duplications in chromosomes, potentially having profound impacts on gene function and the health of an organism.
 :::
 
 ### Step 1: Execute `Manta`
@@ -48,9 +48,10 @@ sbatch manta_modified.sh
 
 #### `filter` folder：
 #### <font color="#f00">The large deletion and insertion variants you want to check are all in this folder.</font>
-**File names with "pass" appended: Filtered for rows with the PASS field.
-File names with "recode" appended: Filtered for regions in the confident interval.**
-- thalassemia_hg38_manta.vcf : Record all information.
+**File names with "pass": Filtered for rows with the PASS field.**
+
+**File names with "recode": Filtered for regions in the confident interval.**
+- thalassemia_hg38_manta.vcf : All information.
 - thalassemia_hg38_manta_del_pass.vcf
 - thalassemia_hg38_manta_del_pass_filtered.recode.vcf
 - thalassemia_hg38_manta_ins_pass.recode.vcf
@@ -58,7 +59,7 @@ File names with "recode" appended: Filtered for regions in the confident interva
 
 ### Step 2: Use IGV to confirm Deletion sites
 
-<font color="#f00">The sample used in the class is a thalassemia sample. In this type of sample, large deletions can be observed in the positions of the *HBA1* and *HBA2* genes on chromosome 16 .</font>
+<font color="#f00">This sample in the class is a thalassemia carrier. One large deletion can be observed in the positions of the *HBA1* and *HBA2* genes on chromosome 16 .</font>
 
 :::warning
 Command to open `IGV`:
