@@ -3,7 +3,7 @@
 
 #### Learning to use `T1K` for HLA typing.
 
-:::warning
+:warning:
 ### Prerequisite:Please first copy the necessary files for the course.
 ```markdown=
 cd /work/username
@@ -13,15 +13,15 @@ rsync -avzP /work/u2499286/T1K/T1K_temp.sh ./
 rsync -avzP /work/u2499286/hlaidx/hla_dna_seq.fa ./
 ```
 
-:::
 
-:::info
+
+ℹ️
 #### What is T1K?
 T1K (The ONE genotyper for KIR and HLA) is a computational tool designed to infer alleles of highly diverse genes, such as KIR and HLA. T1K leverages RNA-seq, WES, or WGS read alignment results to calculate allele abundance for the provided reference allele sequences and determines the actual alleles for each gene based on these abundance data.
 
 T1K also offers subsequent analysis steps, including novel SNP (single nucleotide polymorphism) detection and single-cell expression analysis. T1K supports both single-end and paired-end sequencing data and is compatible with any read length.
 
-:::
+
 
 ### Step 1: Execute `T1K_temp.sh`
 1. Open `T1K_temp.sh` and enter the correct path names.
@@ -70,7 +70,7 @@ Column Descriptions (using the first row as an example):
 #### 學習利用 T1K 做 HLA typing。
 
 
-:::warning
+:warning:
 ### 前情提要：請先複製課程所需檔案
 ```markdown=
 cd /work/username
@@ -79,14 +79,14 @@ cd T1K
 rsync -avzP /work/u2499286/T1K/T1K_temp.sh ./
 rsync -avzP /work/u2499286/hlaidx/hla_dna_seq.fa ./
 ```
-:::
 
-:::info
+
+ℹ️
 #### 什麼是 T1K？
 T1K（The ONE genotyper for KIR and HLA）是一種計算工具，用於推測多樣性基因（如 KIR 和 HLA）的等位基因，T1K 基於 RNA-seq、WES 或 WGS 的讀取比對結果，針對提供的等位基因參考序列計算等位基因的豐富度，並使用這些豐富度數據來確定每個基因的真實等位基因。
 
 T1K 還提供後續分析步驟，包括新穎 SNP（單核苷酸多樣性）的檢測和單細胞表現分析，T1K 支援單端（single-end）和雙端（paired-end）測序數據，且適用於任何讀取長度。
-:::
+
 
 ### step 1 : 執行 `T1K_temp.sh`
 
