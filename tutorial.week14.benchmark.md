@@ -96,10 +96,12 @@ sbatch rocplot.sh
 For example:
 
 - Comparison of <span style="color: red;">SNP results</span> for S14, S15, S16 using Mutect2:
-![截圖 2024-12-03 下午1.13.30](https://hackmd.io/_uploads/Sy-XEM2XJx.png)
+![截圖 2024-12-19 下午4.39.55](https://hackmd.io/_uploads/rJGqn8ZSye.png)
+
 
 - Comparison of <span style="color: red;">Indel results</span> for S14, S15, S16 using Mutect2:
-![截圖 2024-12-03 下午1.13.41](https://hackmd.io/_uploads/ryUS4G3QJl.png)
+![截圖 2024-12-19 下午4.40.02](https://hackmd.io/_uploads/HkA9hLbHkg.png)
+
 
 
 6. You can also open IGV to compare the results from `hap.py`.
@@ -213,11 +215,13 @@ sbatch rocplot.sh
 
 例如：
 - S14, S15, S16 Mutect2 在 SNP 的結果比較：
-![截圖 2024-12-03 下午1.13.30](https://hackmd.io/_uploads/BJ9eNfnX1e.png)
+![截圖 2024-12-19 下午4.39.55](https://hackmd.io/_uploads/Hyru3LWHJl.png)
+
 
 
 - S14, S15, S16 Mutect2 在 Indel 的結果比較：
-![截圖 2024-12-03 下午1.13.41](https://hackmd.io/_uploads/HkdZNGh7kx.png)
+![截圖 2024-12-19 下午4.40.02](https://hackmd.io/_uploads/ByyK38WBJg.png)
+
 
 
 6. 也可以打開 IGV 比較`hap.py`的結果。
