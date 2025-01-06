@@ -1,5 +1,6 @@
 # 20240904 Fantastic Genomic Biomarkers and Where to Find Them Practical Course (part I)
 
+
 ## Main Content of This Course
 >
 ><font color=#0000FF>Please Do Not skip steps, and pay close attention to the instructions</font>
@@ -8,6 +9,7 @@
 1. NCHC registration and login
 2. Thinlinc download and connect NCHC 
 3. Uploading files to NCHC and downloading files
+
 
 ## Tool Overview
  1. iServer (Website): Used to create server accounts and enable OTP (One-Time Password) functionality to secure accounts.
@@ -19,6 +21,7 @@
 ## step 1: NCHC Operations and Settings
 ### Introduction
 > This is a guide for NCHC registration and login. Please follow the steps below in order.
+
 ### Registering for an iService Account
 1. Go to the iService interface: https://iservice.nchc.org.tw/nchc_service/index.php?lang_type=
 2. Click "Registeration" in the upper right corner of the screen.
@@ -42,12 +45,11 @@
 A. Check if your supercomputer account has the "Enable" label next to it. If not, please check if you have completed the verification step in Registering for an iService Account.(Note: You may periodically change the supercomputer password if necessary.) 
 ![image](https://hackmd.io/_uploads/r1c0puVn0.png)
 
-B. Click "Create OTP Token" and check your email for the "Token Registration Notification".
+B. Click "Create OTP Token" and check your email for the "Token Registration Notification". 
 ![image](https://hackmd.io/_uploads/ByhrAuNh0.png)
 
-C. Follow the instructions in the email to install the 'IDExpert' app and complete the mobile binding.
+C. Follow the instructions in the email to install the 'IDExpert' app and complete the mobile binding. 
 (https://iservice.nchc.org.tw/nchc_service/nchc_service_qa_single.php?qa_code=774)
-
 
 ### Project
 1. After accessing the iService webpage, click the following options at the top of the screen: Member Center -> Projects -> My Projects
@@ -56,14 +58,14 @@ C. Follow the instructions in the email to install the 'IDExpert' app and comple
 [NCHC Account Registration form](https://docs.google.com/forms/d/e/1FAIpQLSdj1NXX9Z7DCfTjYdZQKBB3T6H3DXBOz3eZLf34g4zGW-2Sug/viewform?usp=sf_link
 3. After filling out the form, please wait for the TA to add your account to the "Fantastic Genomic Biomarkers and Where to Find Them" project.
 
+### Logging into NCHC
 
-Logging into NCHC
-
-*For Windows users, open CMD.
+- For Windows users, open CMD.
 ![image](https://hackmd.io/_uploads/B1gdIdEnC.png)
 
-*For Mac users, open Terminal.
+- For Mac users, open Terminal.
 ![image](https://hackmd.io/_uploads/rkP16IH3A.png)
+
 1. In CMD (or Terminal), type`ssh supercomputeraccount@t3-c4.nchc.org.tw`to log into the NCHC biomedical node.
 
 ℹ️
@@ -73,12 +75,12 @@ Usage: `ssh user@hostname`
 'user' is your username on the remote server, and 'hostname'is the IP address or hostname of the remote server.
 
 <span style="color: blue;">
-    Note: t3-c4.nchc.org.tw is the biomedical node.
-Additionally, the first time you log into the node, you will see "Are you sure you want to continue connecting (yes/no/[fingerprint])?". Please type yes.</span>
+    Note: The biomedical node is t3-c4.nchc.org.tw.  
+    When logging into the node for the first time, you will be prompted with the message: "Are you sure you want to continue connecting (yes/no/[fingerprint])?". Please type "yes" to proceed.</span>
 
-  Terminal screen:
+- Terminal screen:
 ![](https://hackmd.io/_uploads/BkvbPN7ha.png)
-  Windows  screen:
+- Windows  screen:
 ![image](https://hackmd.io/_uploads/H1OqvuV3A.png)
 
 2. Enter the two-factor authentication method (<span style="color: red;">this is not the supercomputer password</span>).If you chose two-factor authentication method 1 or 3, you will need to enter the OTP.
@@ -92,13 +94,15 @@ Additionally, the first time you log into the node, you will see "Are you sure y
 5. If the login is successful, you will see the following screen:
 ![](https://hackmd.io/_uploads/S1H454mha.png)
 
+
 ## Step 2: Download Thinlinc
 1. Download software: 
 [thinlinc official website](https://www.cendio.com/thinlinc/download/)
 ![image](https://hackmd.io/_uploads/rkY-1KEnC.png)
 
 2. Download and install the version corresponding to your computer from the Thinlinc official website.
-3. Ensure that NCHC OTP is enabled. 
+3. Ensure that NCHC OTP is enabled.
+
 ### Using Thinlinc to Log into NCHC, Access the Remote Host, and Open Terminal
 >Here remind you if you still cannot log in after following the steps below, please check the following: 
 (1) If you encounter "Permission denied (keyboard-interaction)", please ensure you have filled out the form provided by the instructor. If not, fill it out immediately and notify the TA. 
@@ -114,8 +118,6 @@ Additionally, the first time you log into the node, you will see "Are you sure y
 2. Enter your "NCHC supercomputer account" in the username field.
 3. Enter "1"or"3" in the password field, then press enter to log in. (<span style="color: red;">Note: Do not enter the supercomputer password or iService password here!</span>)
 
->
->
 4. Enter your "NCHC supercomputer password" (<span style="color: red;">Note: This is the supercomputer password, not the iService password!</span>)
 ![image](https://hackmd.io/_uploads/rJTPkYEhA.png)
 
@@ -265,7 +267,6 @@ User: your supercomputer account
 # 生物標記物與它們的產地實作課程(一)
 
 
-
 ## 本次課程主要內容
 > 
 > <font color=#0000FF>不要跳步驟、不要跳步驟、不要跳步驟</font>
@@ -277,14 +278,12 @@ User: your supercomputer account
 3. 上傳檔案至國網及至國網下載檔案
 
 
-
 ## 工具概述
 >
 1. iServer（網站）：用於建立伺服器帳號，並啟用 OTP（一次性密碼）功能來保護帳號安全
 2. Terminal開啟終端機（macOS）或CMD命令列（Windows）：從本地電腦遠端登入伺服器或超級電腦，進行指令操作
 3. ThinLinc（local 軟體）：用於透過圖形化介面遠端操作伺服器，適合處理需要桌面環境的工作
 4. rsync（macOS 工具）或FileZilla（Windows 軟體）：在本地與伺服器之間傳輸與管理檔案
-
 
 
 ## step 1:國網操作與設定
@@ -336,16 +335,17 @@ C. 依據信件中的指示安裝『IDExpert』APP』並完成綁定手機
 1. 在CMD(或terminal)中打上`ssh 主機帳號@t3-c4.nchc.org.tw`登入國網生醫節點<span style="color: blue;">
 
 ℹ️
-    ### 命令小學堂
-    `ssh`:登錄到遠程伺服器
-    用法:`ssh user@hostname`
-    user 是你在遠程伺服器上的用戶名，hostname 是遠程伺服器的 IP 地址或主機名。
-    
-    注意`t3-c4.nchc.org.tw`為生醫節點
-    另外，第一次登入節點時會出現 "Are you sure you want to continue connecting (yes/no/[fingerprint])?"，請輸入 yes</span>
-    終端機畫面：
+### 命令小學堂
+`ssh`:登錄到遠程伺服器
+用法:`ssh user@hostname`
+'user'是你在遠程伺服器上的用戶名，'hostname' 是遠程伺服器的 IP 地址或主機名。
+
+<span style="color: blue;">
+注意`t3-c4.nchc.org.tw`為生醫節點。另外，第一次登入節點時會出現 "Are you sure you want to continue connecting (yes/no/[fingerprint])?"，請輸入 yes。</span>
+
+- 終端機畫面：
 ![](https://hackmd.io/_uploads/BkvbPN7ha.png)
-    Windows畫面：
+- Windows畫面：
 ![image](https://hackmd.io/_uploads/Hk-LvdVhC.png)
 
 2. 輸入兩階段驗證方式（<span style="color: red;">不是主機密碼</span>），若兩階段驗證方式選擇1或3，需要輸入OTP
@@ -356,7 +356,6 @@ C. 依據信件中的指示安裝『IDExpert』APP』並完成綁定手機
 
 5.登入成功則可以看到以下畫面
 ![](https://hackmd.io/_uploads/S1H454mha.png)
-
 
 
 ## step 2:下載 Thinklinc
@@ -377,8 +376,7 @@ C. 依據信件中的指示安裝『IDExpert』APP』並完成綁定手機
 > 若上述問題都排除後，仍無法登入，請通知老師or助教，千萬不要硬登！會被鎖起來！！！
   
 - Thinlinc登入畫面如下
-
-    ![](https://i.imgur.com/XvGJFXA.png)
+  ![](https://i.imgur.com/XvGJFXA.png)
 
 1. 請在server輸入登入節點`t3-c4.nchc.org.tw`
 2. 請在username 輸入「國網主機帳號」
@@ -390,11 +388,11 @@ C. 依據信件中的指示安裝『IDExpert』APP』並完成綁定手機
      請在此輸入剛剛取得的 OTP (**不是主機密碼！！！不是iservice密碼！！！**)
     ![image](https://hackmd.io/_uploads/ByOlnc88A.png)
 6. 成功登入後，請點選 「Forward」、「OK」
-    ![image](https://hackmd.io/_uploads/Bygem38LR.png)
-![image](https://hackmd.io/_uploads/HksxQ3L8C.png)
+   ![image](https://hackmd.io/_uploads/Bygem38LR.png)
+   ![image](https://hackmd.io/_uploads/HksxQ3L8C.png)
 
-7. 登入之後，點選左上角 Activitives 後會看到左邊出現九個點 (Show Applications)，點進去之後，選擇 Xfce Terminal
-        ![image](https://hackmd.io/_uploads/SyT2p5I80.png)
+8. 登入之後，點選左上角 Activitives 後會看到左邊出現九個點 (Show Applications)，點進去之後，選擇 Xfce Terminal
+   ![image](https://hackmd.io/_uploads/SyT2p5I80.png)
  
 (==<font color="red">**小提醒：如果過一陣子沒有使用，系統會自動跳出，這時候再重新操作登入流程**</font>==)
 
@@ -405,6 +403,9 @@ C. 依據信件中的指示安裝『IDExpert』APP』並完成綁定手機
 ```
 cd /work/{your_username}
 ```
+
+2. 使用`pwd`可查看所在位置是否正確
+
 ℹ️
 ### 命令小學堂
 ```cd```
@@ -422,13 +423,11 @@ cd的用法:
     * 小技巧：用滑鼠選取、確認一下有無空白
 * 注意：<font color="red">**如果直接複製指令碼、記得看一下是否有要改的地方！！！**</font>
 * 注意：<font color="red">**請將`{your_username}`整個改成你的主機帳號，不要把"{}"也打入！也請不要把"/"刪掉！後面的程式碼也是一樣**</font>
-2. 使用`pwd`可查看所在位置是否正確
 
 ℹ️
 ### 命令小學堂
 ```pwd```
 print working directory，用來顯示當前所在的工作目錄的完整路徑，特別是在多層目錄中工作時，可以隨時查看當前的位置
-
 
 
 ## step 3:檔案資料傳輸
