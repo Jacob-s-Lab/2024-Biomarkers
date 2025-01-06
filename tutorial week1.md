@@ -70,9 +70,9 @@ C. Follow the instructions in the email to install the 'IDExpert' app and comple
 
 ℹ️
 ### Commands Lecture 
-`ssh`: Log in to a remote server
-Usage: `ssh user@hostname`
-'user' is your username on the remote server, and 'hostname'is the IP address or hostname of the remote server.
+- `ssh`: Log in to a remote server.
+- Usage: `ssh user@hostname`
+- 'user' is your username on the remote server, and 'hostname'is the IP address or hostname of the remote server.
 
 <span style="color: blue;">
     Note: The biomedical node is t3-c4.nchc.org.tw.  
@@ -122,14 +122,15 @@ Usage: `ssh user@hostname`
 ![image](https://hackmd.io/_uploads/rJTPkYEhA.png)
 
 5. Use your mobile app to obtain the OTP.
-Enter the OTP just obtained (This is not the supercomputer password or the iService password!), this step should be down twice!
+Enter the OTP just obtained (This is not the supercomputer password or the iService password!), this step should be down twice! 
 ![image](https://hackmd.io/_uploads/rkAY1YVnC.png)
 
 6. After successfully logging in, click "Forward" and "OK."
 ![image](https://hackmd.io/_uploads/H133yFVnA.png)
 ![image](https://hackmd.io/_uploads/Hy3-gtVhC.png)
 
-7. After logging in, click on the top left "Activities" to see nine dots (Show Applications) appear on the left. Click on it, then select Xfce Terminal.![image](https://hackmd.io/_uploads/HktElt42C.png)
+7. After logging in, click on the top left "Activities" to see nine dots (Show Applications) appear on the left. Click on it, then select Xfce Terminal.
+![image](https://hackmd.io/_uploads/HktElt42C.png) 
 (==<font color="red">Reminder: If the system logs you out after a period of inactivity, you will need to repeat the login process</font>==)
 
 ### Entering the Remote Host file`/work`
@@ -137,6 +138,8 @@ Enter the OTP just obtained (This is not the supercomputer password or the iServ
 ```
 cd /work/{your_username}
 ```
+2. Use the`pwd`command to verify if you are in the correct directory.
+
 ℹ️
 ### Commands Lecture 
 ```cd```
@@ -154,7 +157,6 @@ Tip: Use your mouse to select and confirm if there is a space.
 
 Note: <font color="red">If you copy the command, make sure to check if anything needs to be modified!</font>
 Note: <font color="red">Replace {your_username} entirely with your supercomputer account. Do not include the {} symbols! Also, do not delete the /. The same applies to the following code as well.</font>
-2. Use the`pwd`command to verify if you are in the correct directory.
 
 ℹ️
 ### Commands Lecture 
@@ -262,7 +264,6 @@ User: your supercomputer account
 ![螢幕擷取畫面 2024-09-03 195750](https://hackmd.io/_uploads/ry2q-F43A.png)
 
 ---------------------------------------------
----------------------------------------------
 
 # 生物標記物與它們的產地實作課程(一)
 
@@ -336,9 +337,9 @@ C. 依據信件中的指示安裝『IDExpert』APP』並完成綁定手機
 
 ℹ️
 ### 命令小學堂
-`ssh`:登錄到遠程伺服器
-用法:`ssh user@hostname`
-'user'是你在遠程伺服器上的用戶名，'hostname' 是遠程伺服器的 IP 地址或主機名。
+- `ssh`:登錄到遠程伺服器
+- 用法:`ssh user@hostname`
+- 'user'是你在遠程伺服器上的用戶名，'hostname' 是遠程伺服器的 IP 地址或主機名。
 
 <span style="color: blue;">
 注意`t3-c4.nchc.org.tw`為生醫節點。另外，第一次登入節點時會出現 "Are you sure you want to continue connecting (yes/no/[fingerprint])?"，請輸入 yes。</span>
