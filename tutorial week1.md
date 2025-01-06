@@ -5,14 +5,20 @@
 ><font color=#0000FF>Please Do Not skip steps, and pay close attention to the instructions</font>
 >
 >
-
 1. NCHC registration and login
 2. Thinlinc download and connect NCHC 
 3. Uploading files to NCHC and downloading files
 
+## Tool Overview
+ 1. iServer (Website): Used to create server accounts and enable OTP (One-Time Password) functionality to secure accounts.
+ 2. Terminal (macOS) or CMD (Windows): Access the server or supercomputer remotely from the local machine for command-line operations.
+ 3. ThinLinc (Local Software): Provides a graphical interface for remote server operations, suitable for tasks requiring a desktop environment.
+ 4. rsync (macOS Tool) or FileZilla (Windows Software): Used for transferring and managing files between the local machine and the server.
+
+
 ## step 1: NCHC Operations and Settings
 ### Introduction
-This is a guide for NCHC registration and login. Please follow the steps below in order.
+> This is a guide for NCHC registration and login. Please follow the steps below in order.
 ### Registering for an iService Account
 1. Go to the iService interface: https://iservice.nchc.org.tw/nchc_service/index.php?lang_type=
 2. Click "Registeration" in the upper right corner of the screen.
@@ -48,7 +54,7 @@ C. Follow the instructions in the email to install the 'IDExpert' app and comple
 ![image](https://hackmd.io/_uploads/B12QC_EhA.png)
 2. Please fill NCHC Account Registration form.
 [NCHC Account Registration form](https://docs.google.com/forms/d/e/1FAIpQLSdj1NXX9Z7DCfTjYdZQKBB3T6H3DXBOz3eZLf34g4zGW-2Sug/viewform?usp=sf_link
-4. After filling out the form, please wait for the TA to add your account to the "Fantastic Genomic Biomarkers and Where to Find Them" project.
+3. After filling out the form, please wait for the TA to add your account to the "Fantastic Genomic Biomarkers and Where to Find Them" project.
 
 
 Logging into NCHC
@@ -253,12 +259,12 @@ User: your supercomputer account
 7. On the left side (local directories), select the files you want to upload, right-click and choose Upload, then follow the prompts to enter your two-factor authentication, supercomputer password, and OTP in sequence. This will upload the files to NCHC.
 ![螢幕擷取畫面 2024-09-03 195750](https://hackmd.io/_uploads/ry2q-F43A.png)
 
+---------------------------------------------
+---------------------------------------------
 
-
---------
 # 生物標記物與它們的產地實作課程(一)
 
-## 
+
 
 ## 本次課程主要內容
 > 
@@ -266,15 +272,25 @@ User: your supercomputer account
 > <font color=#0000FF>請看好文字及注意事項、請看好文字及注意事項、請看好文字及注意事項</font>
 > 
 >
-> 1. 國網註冊及登入
-> 2. Thinlinc下載並連結國網
-> 3. 上傳檔案至國網及至國網下載檔案
+1. 國網註冊及登入
+2. Thinlinc下載並連結國網
+3. 上傳檔案至國網及至國網下載檔案
 
-----------------------------------------------
+
+
+## 工具概述
+>
+1. iServer（網站）：用於建立伺服器帳號，並啟用 OTP（一次性密碼）功能來保護帳號安全
+2. Terminal開啟終端機（macOS）或CMD命令列（Windows）：從本地電腦遠端登入伺服器或超級電腦，進行指令操作
+3. ThinLinc（local 軟體）：用於透過圖形化介面遠端操作伺服器，適合處理需要桌面環境的工作
+4. rsync（macOS 工具）或FileZilla（Windows 軟體）：在本地與伺服器之間傳輸與管理檔案
+
+
 
 ## step 1:國網操作與設定
 ### 前言
 > 這是一份國網註冊及登入的教學指南，請按照以下步驟逐一操作
+
 ### 註冊iservice帳號
 1. 進入iservice介面：https://iservice.nchc.org.tw/nchc_service/index.php?lang_type=
 2. 點選畫面右上角的"註冊"
@@ -288,7 +304,6 @@ User: your supercomputer account
 ![image](https://hackmd.io/_uploads/BJF9JVXhp.png)
 6. 依照指示完成驗證
 (注意：會員註冊確認信會寄送到你用來註冊的信箱、註冊授權碼會寄送到手機簡訊)
----------------------------------------------
 
 ### 登入iservice帳號
 1. 進入iservice介面：https://iservice.nchc.org.tw/nchc_service/index.php?lang_type=
@@ -309,10 +324,7 @@ C. 依據信件中的指示安裝『IDExpert』APP』並完成綁定手機
 1. 進入iservice網頁後，依序點選畫面上方的：會員中心->計畫管理->我的計畫
 ![image](https://hackmd.io/_uploads/r1Gk54Xh6.png)
 2. 請填寫表單[NCHC Account Registration form](https://docs.google.com/forms/d/e/1FAIpQLSdj1NXX9Z7DCfTjYdZQKBB3T6H3DXBOz3eZLf34g4zGW-2Sug/viewform?usp=sf_link)
-4. 完成表單後，**敬請等待**助教們將您的帳號加入本課程「2024生物標記物與它們的產地」的計畫中
-
-------------------------------------------------
-
+3. 完成表單後，**敬請等待**助教們將您的帳號加入本課程「2024生物標記物與它們的產地」的計畫中
 
 ### 登入國網
 * 使用Windows的同學開啟命令題字元(CMD)
@@ -345,21 +357,15 @@ C. 依據信件中的指示安裝『IDExpert』APP』並完成綁定手機
 5.登入成功則可以看到以下畫面
 ![](https://hackmd.io/_uploads/S1H454mha.png)
 
--------------------------
-
 
 
 ## step 2:下載 Thinklinc
-### :下載Thinlinc
+### 下載Thinlinc
 1. 下載需要用到的軟體：Thinlinc
 - 在[thinlinc官網](https://www.cendio.com/thinlinc/download/)下載您的電腦相對應的版本並安裝即可
 ![截圖 2024-06-24 上午10.06.36](https://hackmd.io/_uploads/HJq3EUI80.png)
 
 2. 確認國網OTP是否已啟用
-
--------------------------------------
-
-
 
 ### 使用Thinlinc登入國網、進入遠端主機、開啟終端機 (terminal)
 > (小提醒) 依照以下步驟仍無法登入時，請先確認：
@@ -373,7 +379,6 @@ C. 依據信件中的指示安裝『IDExpert』APP』並完成綁定手機
 - Thinlinc登入畫面如下
 
     ![](https://i.imgur.com/XvGJFXA.png)
-
 
 1. 請在server輸入登入節點`t3-c4.nchc.org.tw`
 2. 請在username 輸入「國網主機帳號」
@@ -391,13 +396,7 @@ C. 依據信件中的指示安裝『IDExpert』APP』並完成綁定手機
 7. 登入之後，點選左上角 Activitives 後會看到左邊出現九個點 (Show Applications)，點進去之後，選擇 Xfce Terminal
         ![image](https://hackmd.io/_uploads/SyT2p5I80.png)
  
-
 (==<font color="red">**小提醒：如果過一陣子沒有使用，系統會自動跳出，這時候再重新操作登入流程**</font>==)
-
-----------------------------------------
-
-
-
 
 ### 進入遠端主機的資料夾`/work`
 
@@ -430,7 +429,6 @@ cd的用法:
 ```pwd```
 print working directory，用來顯示當前所在的工作目錄的完整路徑，特別是在多層目錄中工作時，可以隨時查看當前的位置
 
----------------------------------------
 
 
 ## step 3:檔案資料傳輸
@@ -439,11 +437,9 @@ print working directory，用來顯示當前所在的工作目錄的完整路徑
 - 使用Mac的同學可使用終端機並搭配[rsync指令上傳](#使用rsync上傳檔案)/[下載](#使用rsync下載檔案)
 - 使用Windows的同學可使用[FileZilla上傳](#使用FileZilla上傳檔案)/[下載](#使用FileZilla下載檔案)
 
-------------------------------------------------
+-----------------------------
 
-
-
-## 使用rsync上傳檔案
+### 使用rsync上傳檔案
 1. 首先，先確認你自己的電腦，你要上傳的3個檔案是否統一放在一個獨立的資料夾(千萬不要放到本機電腦的desktop or download，不然依照後面的步驟會把所有在資料夾的檔案全部上傳喔)
 ![image](https://hackmd.io/_uploads/S1wxNLmpp.png)
 2. 開啟**本機端的**終端機
@@ -471,15 +467,11 @@ print working directory，用來顯示當前所在的工作目錄的完整路徑
 5. -h：人類可讀。這個選項使輸出更易於閱讀，將文件大小轉換為更友好的格式（例如 KB、MB），而不是顯示原始字節大小。
 6. "."：這表示源目錄。在這種情況下，它意味著當前目錄。rsync 會將當前目錄的內容同步到指定的目標位置（在這個命令中目標位置缺失）。
 
-    
 <span style="color: red;">注意！如果你在國網上建的資料夾名稱不是 "HW1" 的話，請根據你的資料夾名稱更改</span>
     （附註："."代表你現在資料夾所在的位置）
     （注意：**檔案與 "." 之間需空一格**）
     （附註，檔案比較大，可能會上傳很久，可以打坐冥想）
 5. 依序輸入**兩階段驗證方式、主機密碼與OTP（若兩階段驗證方式選擇1或3才需要）** 後就會將資料夾中的檔案開始上傳
-
---------------------------------
-
 
 ### 使用rsync下載檔案
 
@@ -495,8 +487,7 @@ print working directory，用來顯示當前所在的工作目錄的完整路徑
     （注意：**檔案與 "." 之間需空一格**）
 3. 依序輸入 **1、主機密碼與OTP** 後就會開始下載，下載完成後即可從本地端開啟檔案
 
----------------------------------------------
-
+-----------------------------
 
 ### 使用FileZilla上傳檔案
 1. 若沒安裝FileZilla的同學，請至[此網址](https://filezilla-project.org)下載，點選**FileZilla Client**並點選download
@@ -520,11 +511,8 @@ print working directory，用來顯示當前所在的工作目錄的完整路徑
 6. 請在右半部"遠端站台"處，改成檔案所在路徑(用意是要將檔案上傳到這個路徑下)
 ![](https://hackmd.io/_uploads/rkTiLCf66.png)
 
-
 7. 在左半部(本機空間)選取要上傳的檔案，**按右鍵**選擇**上傳**，依序輸入 **1主機密碼與OTP**，即可將檔案上傳至國網
 ![image](https://hackmd.io/_uploads/Sk_HQPsha.png)
-
------------------------------
 
 ### 使用FileZilla下載檔案
 1. 請依照前面[上傳檔案](#使用FileZilla上傳檔案)step 1～step 7進行連線
@@ -534,3 +522,5 @@ print working directory，用來顯示當前所在的工作目錄的完整路徑
 ![image](https://hackmd.io/_uploads/Hk-VEwihT.png)
 
 (<span style="color: red;">**注意，若想要開啟檔案，請不要直接在FileZilla的本地站台點開，請回到你的電腦桌面點選剛剛儲存的路徑再去打開檔案，若直接從FileZilla的本地站台點選檔名，將會把檔案上傳到國網**</span>）
+
+-----------------------------
