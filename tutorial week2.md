@@ -151,7 +151,7 @@ This command is used to list the status of jobs or job arrays associated with an
 3. Entering `ls` allows you to view all the files in a directory, where you can see `out.log`, `err.log`, and HTML files.
 - out.log and err.log are the standard output and standard error for this script. If any errors occurred during execution, you can check err.log.
 - This script will generate an HTML file, which can be downloaded and opened to view the FastQC Report.
-Details available for [download](https://github.com/Jacob-s-Lab/2024-Biomarkers/blob/main/tutorial%20week1) at the link
+Details available for [download](https://github.com/Jacob-s-Lab/2024-Biomarkers/blob/main/tutorial%20week1.md) at the link
 
 ---------------
 
@@ -197,7 +197,7 @@ rsync -avz /work/u2499286/fastqc.sh ./
 ```
 #下載密碼:NGS112-2
 ```
-6. 請直接[上傳](https://github.com/Jacob-s-Lab/2024-Biomarkers/blob/main/tutorial%20week1)  檔案到fastqc
+6. 請直接[上傳](https://github.com/Jacob-s-Lab/2024-Biomarkers/blob/main/tutorial%20week1.md)  檔案到fastqc
 <span style="color: red;">此步驟需要學習的內容為將檔案從本地端上傳至國網</span>
 ```
 上傳檔案:rsync -azrvh . 主機帳號@t3-c4.nchc.org.tw:/work/主機帳號/result/fastqc
@@ -317,5 +317,6 @@ sacct
 3. 查看結果  
  `out.log`和`err.log`為執行這個script的標準輸出和標準錯誤，如果執行時有出現錯誤，可以查看`err.log`(檔案會在`/work/username/`底下)
 * 這份執行檔會產生html檔，下載後即可開啟查看FastQC Report
-* 下載詳情可見連結[下載](https://github.com/Jacob-s-Lab/2024-Biomarkers/blob/main/tutorial%20week1)
+* 下載詳情可見連結[下載](https://github.com/Jacob-s-Lab/2024-Biomarkers/blob/main/tutorial%20week1.md)
+  
 
