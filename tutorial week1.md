@@ -60,11 +60,11 @@ C. Follow the instructions in the email to install the 'IDExpert' app and comple
 
 ### Logging into NCHC
 
-- For Windows users, open CMD.
-![image](https://hackmd.io/_uploads/B1gdIdEnC.png)
+- For Windows users, open CMD.     
+![image](https://hackmd.io/_uploads/B1gdIdEnC.png)     
 
-- For Mac users, open Terminal.
-![image](https://hackmd.io/_uploads/rkP16IH3A.png)
+- For Mac users, open Terminal.     
+![image](https://hackmd.io/_uploads/rkP16IH3A.png)     
 
 1. In CMD (or Terminal), type`ssh supercomputeraccount@t3-c4.nchc.org.tw`to log into the NCHC biomedical node.
 
@@ -96,41 +96,41 @@ C. Follow the instructions in the email to install the 'IDExpert' app and comple
 
 
 ## Step 2: Download Thinlinc
-1. Download software: 
-[thinlinc official website](https://www.cendio.com/thinlinc/download/)
-![image](https://hackmd.io/_uploads/rkY-1KEnC.png)
+1. Download software:
+[thinlinc official website](https://www.cendio.com/thinlinc/download/)      
+![image](https://hackmd.io/_uploads/rkY-1KEnC.png)      
 
 2. Download and install the version corresponding to your computer from the Thinlinc official website.
 3. Ensure that NCHC OTP is enabled.
 
 ### Using Thinlinc to Log into NCHC, Access the Remote Host, and Open Terminal
->Here remind you if you still cannot log in after following the steps below, please check the following: 
-(1) If you encounter "Permission denied (keyboard-interaction)", please ensure you have filled out the form provided by the instructor. If not, fill it out immediately and notify the TA. 
-(2) Confirm that OTP authentication is enabled on the iService website. 
-(3) Ensure the input order during login is correct. 
-(4) Verify that the supercomputer password is entered correctly (Note: This is different from the iService account password). 
-(5) Pay attention to case sensitivity, language switching, and full-width/half-width character switching issues (Mac users should be extra cautious). If all the above issues are resolved and you still cannot log in, please notify the instructor or TA. Do not force a login attempt, as it may lock your account!
+> Here remind you if you still cannot log in after following the steps below, please check the following:     
+> (1) If you encounter "Permission denied (keyboard-interaction)", please ensure you have filled out the form provided by the instructor. If not, fill it out immediately and notify the TA.     
+> (2) Confirm that OTP authentication is enabled on the iService website.    
+> (3) Ensure the input order during login is correct.    
+> (4) Verify that the supercomputer password is entered correctly (Note: This is different from the iService account password).    
+> (5) Pay attention to case sensitivity, language switching, and full-width/half-width character switching issues (Mac users should be extra cautious). If all the above issues are resolved and you still cannot log in, please notify the instructor or TA. Do not force a login attempt, as it may lock your account!    
 
-- The Thinlinc login screen is as follows:
+- The Thinlinc login screen is as follows:      
  ![](https://i.imgur.com/XvGJFXA.png)
  
 1. Enter the login node`t3-c4.nchc.org.tw` in the server field.
 2. Enter your "NCHC supercomputer account" in the username field.
 3. Enter "1"or"3" in the password field, then press enter to log in. (<span style="color: red;">Note: Do not enter the supercomputer password or iService password here!</span>)
 
-4. Enter your "NCHC supercomputer password" (<span style="color: red;">Note: This is the supercomputer password, not the iService password!</span>)
+4. Enter your "NCHC supercomputer password" (<span style="color: red;">Note: This is the supercomputer password, not the iService password!</span>)     
 ![image](https://hackmd.io/_uploads/rJTPkYEhA.png)
 
 5. Use your mobile app to obtain the OTP.
-Enter the OTP just obtained (This is not the supercomputer password or the iService password!), this step should be down twice! 
+Enter the OTP just obtained (This is not the supercomputer password or the iService password!), this step should be down twice!      
 ![image](https://hackmd.io/_uploads/rkAY1YVnC.png)
 
 6. After successfully logging in, click "Forward" and "OK."
 ![image](https://hackmd.io/_uploads/H133yFVnA.png)
 ![image](https://hackmd.io/_uploads/Hy3-gtVhC.png)
 
-7. After logging in, click on the top left "Activities" to see nine dots (Show Applications) appear on the left. Click on it, then select Xfce Terminal.
-![image](https://hackmd.io/_uploads/HktElt42C.png) 
+7. After logging in, click on the top left "Activities" to see nine dots (Show Applications) appear on the left. Click on it, then select Xfce Terminal.    
+![image](https://hackmd.io/_uploads/HktElt42C.png)      
 (==<font color="red">Reminder: If the system logs you out after a period of inactivity, you will need to repeat the login process</font>==)
 
 ### Entering the Remote Host file`/work`
@@ -223,10 +223,10 @@ If you need to download a folder, modify the command to `rsync -azrvh`.
 [FileZilla download](https://filezilla-project.org)
 ![](https://hackmd.io/_uploads/BJxzRs5u2.png)
 
-2. Open FileZilla and click on the Site Manager in the top left corner.
-![1](https://hackmd.io/_uploads/BygcgtEnR.png)
-If successful, you’ll see the following screen:
-![2](https://hackmd.io/_uploads/H19axYE2C.png)
+2. Open FileZilla and click on the Site Manager in the top left corner.       
+![1](https://hackmd.io/_uploads/BygcgtEnR.png)      
+If successful, you’ll see the following screen:      
+![2](https://hackmd.io/_uploads/H19axYE2C.png)     
 
 
 3. Click New Site and fill in or change the options as shown in the following screen:
@@ -237,7 +237,7 @@ If successful, you’ll see the following screen:
 
 2. On the left side, navigate to the directory where you want to download the files (to avoid losing track of where the files are saved).
 
-3. On the right side (NCHC directories), select the files you want to download, right-click and choose Download, then follow the prompts to enter your two-factor authentication, supercomputer password, and OTP in sequence. The files will be downloaded to the directory displayed on the left side of the screen.
+3. On the right side (NCHC directories), select the files you want to download, right-click and choose Download, then follow the prompts to enter your two-factor authentication, supercomputer password, and OTP in sequence. The files will be downloaded to the directory displayed on the left side of the screen.        
 ![螢幕擷取畫面 2024-09-03 195820](https://hackmd.io/_uploads/HyeaZKV20.png)
 
 
@@ -293,30 +293,31 @@ User: your supercomputer account
 
 ### 註冊iservice帳號
 1. 進入iservice介面：https://iservice.nchc.org.tw/nchc_service/index.php?lang_type=
-2. 點選畫面右上角的"註冊"
-![image](https://hackmd.io/_uploads/B1VWT7Q36.png)
+2. 點選畫面右上角的"註冊"       
+![image](https://hackmd.io/_uploads/B1VWT7Q36.png)      
 3. 閱讀並同意iService會員註冊及服務使用條款
 4. 請輸入預計註冊的iservice帳號
 (注意：這裡的iservice帳號**只是用來登入iservice網站(非主機！)用的**)
 5. 依序填寫**會員資料**、**主機帳號資料** 
 (注意：一支手機號碼只能申請一個帳號)
-(注意：請記下你用來註冊的信箱＆密碼(用來登入**iservice網站**)、記下你的主機帳號＆密碼(用來登入及操作**國網主機**))
-![image](https://hackmd.io/_uploads/BJF9JVXhp.png)
+(注意：請記下你用來註冊的信箱＆密碼(用來登入**iservice網站**)、記下你的主機帳號＆密碼(用來登入及操作**國網主機**))      
+![image](https://hackmd.io/_uploads/BJF9JVXhp.png)     
 6. 依照指示完成驗證
 (注意：會員註冊確認信會寄送到你用來註冊的信箱、註冊授權碼會寄送到手機簡訊)
 
 ### 登入iservice帳號
 1. 進入iservice介面：https://iservice.nchc.org.tw/nchc_service/index.php?lang_type=
-2. 點選畫面右上角的"登入"
-![image](https://hackmd.io/_uploads/B1VWT7Q36.png)
+2. 點選畫面右上角的"登入"     
+![image](https://hackmd.io/_uploads/B1VWT7Q36.png)     
 3. 依序點選畫面上方的：會員中心->會員資訊->主機帳號資訊
 ![image](https://hackmd.io/_uploads/SJ9ou4mhp.png)
-A. 注意你的主機帳號旁邊是否有註記"啟用"，若沒有請注意[註冊iservice帳號](##註冊iservice帳號)是否有完成驗證步驟
-![image](https://hackmd.io/_uploads/SkgBlY4X2a.png)
-(注意：若有需要可自行定期更改主機密碼)
-B. 請點選"建立OTP載具"，並到當時註冊的信箱中收取"載具註冊通知信"
-![image](https://hackmd.io/_uploads/HyoL8V736.png)
-C. 依據信件中的指示安裝『IDExpert』APP』並完成綁定手機
+
+A. 注意你的主機帳號旁邊是否有註記"啟用"，若沒有請注意[註冊iservice帳號](##註冊iservice帳號)是否有完成驗證步驟      
+![image](https://hackmd.io/_uploads/SkgBlY4X2a.png)      
+(注意：若有需要可自行定期更改主機密碼)     
+B. 請點選"建立OTP載具"，並到當時註冊的信箱中收取"載具註冊通知信"      
+![image](https://hackmd.io/_uploads/HyoL8V736.png)      
+C. 依據信件中的指示安裝『IDExpert』APP』並完成綁定手機      
 
 *更詳細的[取得OTP認證碼](https://iservice.nchc.org.tw/nchc_service/nchc_service_qa_single.php?qa_code=774)步驟請參考連結文章
 
@@ -327,11 +328,11 @@ C. 依據信件中的指示安裝『IDExpert』APP』並完成綁定手機
 3. 完成表單後，**敬請等待**助教們將您的帳號加入本課程「2024生物標記物與它們的產地」的計畫中
 
 ### 登入國網
-* 使用Windows的同學開啟命令題字元(CMD)
-![image](https://hackmd.io/_uploads/B1gdIdEnC.png)
+* 使用Windows的同學開啟命令題字元(CMD)      
+![image](https://hackmd.io/_uploads/B1gdIdEnC.png)      
 
-* 使用Mac的同學開啟終端機 (terminal)
-![](https://hackmd.io/_uploads/H1K5YKDna.png)
+* 使用Mac的同學開啟終端機 (terminal)      
+![](https://hackmd.io/_uploads/H1K5YKDna.png)      
 
 1. 在CMD(或terminal)中打上`ssh 主機帳號@t3-c4.nchc.org.tw`登入國網生醫節點<span style="color: blue;">
 
@@ -368,15 +369,15 @@ C. 依據信件中的指示安裝『IDExpert』APP』並完成綁定手機
 2. 確認國網OTP是否已啟用
 
 ### 使用Thinlinc登入國網、進入遠端主機、開啟終端機 (terminal)
-> (小提醒) 依照以下步驟仍無法登入時，請先確認：
-> (1) 如果出現Permission denied (keyboard-interaction)，請確認當時是否有填寫老師給你的表單，如果沒有請立馬填寫、通知助教
-> (2) 是否有到iservice網站啟用OTP認證
-> (3) 登入時，輸入的東西順序是否正確
-> (4) 主機帳號密碼是否輸錯 (注意：跟iservice帳號密碼不一樣)
-> (5) 釐清大小寫/中英切換/全形半形字切換問題 (Mac使用者更需注意)
-> 若上述問題都排除後，仍無法登入，請通知老師or助教，千萬不要硬登！會被鎖起來！！！
+> (小提醒) 依照以下步驟仍無法登入時，請先確認：      
+> (1) 如果出現Permission denied (keyboard-interaction)，請確認當時是否有填寫老師給你的表單，如果沒有請立馬填寫、通知助教      
+> (2) 是否有到iservice網站啟用OTP認證      
+> (3) 登入時，輸入的東西順序是否正確      
+> (4) 主機帳號密碼是否輸錯 (注意：跟iservice帳號密碼不一樣)      
+> (5) 釐清大小寫/中英切換/全形半形字切換問題 (Mac使用者更需注意)      
+> 若上述問題都排除後，仍無法登入，請通知老師or助教，千萬不要硬登！會被鎖起來！！！      
   
-- Thinlinc登入畫面如下
+- Thinlinc登入畫面如下      
   ![](https://i.imgur.com/XvGJFXA.png)
 
 1. 請在server輸入登入節點`t3-c4.nchc.org.tw`
@@ -492,9 +493,9 @@ print working directory，用來顯示當前所在的工作目錄的完整路徑
 ### 使用FileZilla上傳檔案
 1. 若沒安裝FileZilla的同學，請至[此網址](https://filezilla-project.org)下載，點選**FileZilla Client**並點選download
 ![](https://hackmd.io/_uploads/BJxzRs5u2.png)
-2. 開啟FileZilla，點選左上角的站台管理員
-![image](https://hackmd.io/_uploads/H1zsJDi2p.png)
-若成功會看到以下畫面
+2. 開啟FileZilla，點選左上角的站台管理員      
+![image](https://hackmd.io/_uploads/H1zsJDi2p.png)      
+若成功會看到以下畫面      
 ![image](https://hackmd.io/_uploads/rkcRkDjhT.png)
 3. 點選**新增站台**並依照以下畫面填入或更改選項
 ![image](https://hackmd.io/_uploads/HkP4lwihT.png)
@@ -508,7 +509,7 @@ print working directory，用來顯示當前所在的工作目錄的完整路徑
 (注意：不要看到"密碼"就直接全部都輸入主機密碼，請依據說明"依序"輸入)
 5. 連線成功後，如下圖所示，左半部是你的本機空間與路徑，右半部是你的國網空間與路徑
 ![image](https://hackmd.io/_uploads/Skf3GwsnT.png)
-6. 請在右半部"遠端站台"處，改成檔案所在路徑(用意是要將檔案上傳到這個路徑下)
+6. 請在右半部"遠端站台"處，改成檔案所在路徑(用意是要將檔案上傳到這個路徑下)      
 ![](https://hackmd.io/_uploads/rkTiLCf66.png)
 
 7. 在左半部(本機空間)選取要上傳的檔案，**按右鍵**選擇**上傳**，依序輸入 **1主機密碼與OTP**，即可將檔案上傳至國網
@@ -518,7 +519,7 @@ print working directory，用來顯示當前所在的工作目錄的完整路徑
 1. 請依照前面[上傳檔案](#使用FileZilla上傳檔案)step 1～step 7進行連線
 2. 在左半部先移動到檔案要下載到的資料夾下
 (注意：避免到時候檔案下載到你不知道的地方去)
-3. 在右半部(國網主機空間)選取要下載的檔案，**按右鍵**選擇**下載**，依序輸入 **1、主機密碼與OTP**，即可將檔案下載(檔案放的位置就在你左半部顯示的資料夾路徑下)
+3. 在右半部(國網主機空間)選取要下載的檔案，**按右鍵**選擇**下載**，依序輸入 **1、主機密碼與OTP**，即可將檔案下載(檔案放的位置就在你左半部顯示的資料夾路徑下)      
 ![image](https://hackmd.io/_uploads/Hk-VEwihT.png)
 
 (<span style="color: red;">**注意，若想要開啟檔案，請不要直接在FileZilla的本地站台點開，請回到你的電腦桌面點選剛剛儲存的路徑再去打開檔案，若直接從FileZilla的本地站台點選檔名，將會把檔案上傳到國網**</span>）
