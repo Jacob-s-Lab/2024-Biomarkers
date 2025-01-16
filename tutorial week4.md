@@ -210,18 +210,11 @@ If you want to know th details about bwa :https://bio-bwa.sourceforge.net/bwa.sh
 9. Overrepresented sequences
 10. Adapter Content
 ![image](https://hackmd.io/_uploads/S1Y2egeCA.png)
+
 -------------------------
 
-
-
-
-
-
-
-
-
-
 :warning: **Warning**
+
 ### 課前助教小提醒~
 #### 1. NCHC資料夾層級介紹
 ![image](https://hackmd.io/_uploads/BymXkrFT0.png)
@@ -265,7 +258,7 @@ cd /work/username/alignment
 ```
 3. 複製上課所需執行檔
 ```marksown=
-rsync -avz /work/u2499286/alignment/bwa_markdup.sh /work/username/alignment
+rsync -avz /work/u2499286/bwa.sh /work/username/alignment
 ```
 ### step 2 修改分析執行檔
 
@@ -293,12 +286,12 @@ vim bwa_markdup.sh
 (8) #SBATCH --mail-user=           ###e-mail:可修改
 (9) #SBATCH --mail-type=END        ###指定送出email時機:可為NONE, BEGIN, END, FAIL, REQUEUE, ALL
 ```
-3. 在任何<span style="color: red;">username</span>的位子輸入自己的主機帳號
+3. 在任何<span style="color: red;">username</span>的位子輸入自己的主機帳號    
 
 ![image](https://hackmd.io/_uploads/H1Yo8qbTA.png)
 
 
-本次加入步驟
+本次加入步驟      
 ![image](https://hackmd.io/_uploads/SktMvx-R0.png)
 
 4. 輸入`:wq`儲存離開
@@ -307,18 +300,18 @@ vim bwa_markdup.sh
 ```
 5. 執行script
 
-(1)輸入以下指令，來以sbatch job的方式送出編輯完成的草稿
+(1) 輸入以下指令，來以sbatch job的方式送出編輯完成的草稿
 ```
-sbatch bwa_markdup.sh
+sbatch bwa.sh
 ```
 
 
-(2)若送出成功將會出現以下文字 (`bwa_markdup.sh`的檔案跑完後會自動在alignmnet資料下建立一個alignmentRM資料夾，將結果放在裡面)
+(2) 若送出成功將會出現以下文字 (`bwa.sh`的檔案跑完後會自動在alignmnet資料下建立一個alignmentRM資料夾，將結果放在裡面)
 
 ![image](https://hackmd.io/_uploads/Sk5mqIYT0.png)
 
 
-(3)可使用以下指令查看工作執行情況
+(3) 可使用以下指令查看工作執行情況
 ```
 sacct
 ```
@@ -327,25 +320,25 @@ sacct
 
  6. 查看結果:在`alignmentR`資料夾中會有`sam`,`bam`檔，並確認檔案完整性，詳細步驟逐條列在下面
 
-(1)開啟alignmentRM資料夾:可使用相對路徑或絕對路徑
+(1) 開啟alignmentRM資料夾:可使用相對路徑或絕對路徑
 ```marksown=
 cd alignmnetRM                            #可使用相對路徑
 cd /work/username/alignment/alignmentRM   #或使用絕對路徑
 ```
 
-(2)確認檔案存在:
+(2) 確認檔案存在:
 ```
 ls
 ```
-(3)確認檔案完整性:
+(3) 確認檔案完整性:
 ```
 less SRR13076392_S14_L002_.sam
 ```
-(4)利用 shift+g 查看檔案最底部
+(4) 利用 shift+g 查看檔案最底部
 
 ![image](https://hackmd.io/_uploads/HJUrZ7B60.png)
 
-(5)退出:
+(5) 退出:
 ```
 q
 ```
@@ -354,17 +347,17 @@ q
  ## 用IGV察看結果
  
 :warning: **Warning**
+
 ### :warning: <前情提要> :warning:
 由於bwa在執行alignment/ MarkDuplicates的時間較長，所以執行以下步驟時使用的都是助教已經跑出的結果，請先複製助教的結果到alignment資料夾底下(兩個檔案都要)
 
 ```
-rsync -avz /work/u2499286/alignment/alignmentRM/SRR13076392_S14_L002_.sorted.markdup.bam ./
-rsync -avz /work/u2499286/alignment/alignmentRM/SRR13076392_S14_L002_.sorted.markdup.bai ./
+rsync -avz /work/u2499286/S14_HC_result/SRR13076392_S14_L002.sorted.bam ./
+rsync -avz /work/u2499286/S14_HC_result/SRR13076392_S14_L002.sorted.bam.bai ./
 ```
 
-
 ### step 1使用thinlinc、開啟IGV
-1. 使用thinlinc、開啟terminal
+1. 使用thinlinc、開啟 'Xfce terminal'
 2. 在terminal利用`sh`指令開啟IGV軟體
 ```
 sh /opt/ohpc/Taiwania3/pkg/biology/IGV/IGV_v2.10.3/igv.sh
@@ -392,7 +385,7 @@ sh /opt/ohpc/Taiwania3/pkg/biology/IGV/IGV_v2.10.3/igv.sh
 * bam file:`/work/username/alignment/SRR13076392_S14_L002_sorted.markdup.bam`
 
 
-    ![image](https://hackmd.io/_uploads/S1dHkQFTR.png)
+![image](https://hackmd.io/_uploads/S1dHkQFTR.png)
 
 
 
@@ -407,14 +400,17 @@ sh /opt/ohpc/Taiwania3/pkg/biology/IGV/IGV_v2.10.3/igv.sh
 > * 在左側灰色區域點右鍵
 >   1. 勾選 "View as pairs"
 >   2. Color alignments by → insert size and pair orientation
->   3. Sort alignments by → insert size
-> ![image](https://hackmd.io/_uploads/Hkr0ckj80.png)
+>   3. Sort alignments by → insert size     
+>     ![image](https://hackmd.io/_uploads/Hkr0ckj80.png)
 
 若你想要了解在 IGV 中每個 read 的顏色所代表的意義，可以參考以下連結(https://igv.org/doc/desktop/#)
 [User Guide > Tracks and Data Types > Alignments > Paired-end alignments > Detecting structral variants]
+
 ### step 2 觀察MarkDuplicates這步驟的影響(比較本週及上週結果)
 ![image](https://github.com/user-attachments/assets/060d1b33-3d47-440c-98bf-e46ef70834ec)
 如果想知道bwa的詳細內容:https://bio-bwa.sourceforge.net/bwa.shtml
+
+
 ### Fastqc Report介紹
 #### 介紹第二週做出來的fastqc report
 1. Fastqc report
